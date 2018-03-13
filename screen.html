@@ -6,28 +6,43 @@
     <link rel="stylesheet" type="text/css" href="CSS/screen.css"/>
     <!-- <base target="_parent"> -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <!-- <script type="text/javascript">
-    $(document).ready(function(){
-      $(".home").click(function(){
-        $(".screen").toggleClass('active')
-        $(".button").toggleClass('active')
-        $(".img").toggleClass('active')
-        $(".txt").toggleClass('active')
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('time').innerHTML =
+            h + ":" + m;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
 
 
-      })
-    })
-    </script> -->
+</script>
   </head>
-  <body class="center">
+  <body class="center" onload="startTime()">
 
 
-           <div class="btext"></div>
+           <div class="headGrid">
+           <div class="cell"></div>
+           <div id="time" class="time"></div>
+           <div class="battery"><p>100%</p><img class="battery"  src="css/images/iphoneBattery.png"></div>
+           </div>
            <nav class="button">
+
              <a><img class="img" src="CSS/Images/home_icon1.png"></a>
+
              <a><img class="img"  src="CSS/Images/abouticon1.png"></a>
+
              <a><img class="img" src="css/images/iphoneGallery.png"></a>
-             <a href="http://www.facebook.com"><img class="img" src="css/images/FBlogo.png"></a>
+
+             <a  href="http://www.facebook.com" target="_blank"><img class="img" src="css/images/FBlogo.png"></a>
            </nav>
            <div class="btext">
                    <p class="txt">Home</p>
