@@ -20,6 +20,11 @@ body
   padding: 0;
   background: #a2d49f;
 }
+a
+{
+  font-size: 0px;
+  width: 100%;
+}
 .center
 {
   position: absolute;
@@ -73,6 +78,11 @@ body
   opacity: 0;
 
 }
+.txt
+{
+  opacity: 0;
+
+}
 .button
 {
   opacity: 1;
@@ -96,8 +106,6 @@ div.btext
   margin-top: 0px;
   margin-right: 3px;
   margin-left: 3px;
-
-
 }
 div.btext p
 {
@@ -107,6 +115,11 @@ a img.img.active
 {
   opacity: 1;
   width: 100%;
+}
+.txt.active
+{
+  text-align: center;
+  opacity: 1;
 }
 .button.active a
 {

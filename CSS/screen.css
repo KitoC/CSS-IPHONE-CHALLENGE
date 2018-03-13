@@ -1,0 +1,133 @@
+
+
+/* tan: eed5b6
+    light blue 83b0ab
+    brown 7f4f27
+    orange e59e42
+    red d64832
+    light tan f3dbb7
+
+    light blue green a2d49f
+    green c7c12f
+    orange f26247
+    red ec2045
+    tan ffeeb0
+
+    fb 31518e*/
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #a2d49f;
+  width: 256px;
+  height:455px;
+}
+
+
+.center
+{
+  position: relative;
+  background: #83b0ab;
+  /* width: 256px;
+  height:455px; */
+  /* margin: 58px auto; */
+  overflow: hidden;
+}
+.blank
+{
+  position: relative;
+  background: #262626;
+  /* width: 256px;
+  height:455px; */
+  /* margin: 58px auto; */
+  overflow: hidden;
+}
+
+/* .screen:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .2);
+  width: 100%;
+  height: 100%;
+  transform: skewX(-5deg) translateX(-50%);
+} */
+.screen.active
+{
+  background-color: #83b0ab;
+  background-size: cover;
+}
+
+.button
+{
+  opacity: 1;
+  background-size: cover;
+  grid-template-rows:  3.5em 3.5em 3.5em 3.5em;
+  grid-template-columns: 3.5em 3.5em 3.5em 3.5em;
+  display: grid;
+  justify-content: space-around;
+  margin: 0px opx;
+  margin-right: 6px;
+  height: 3.5em;
+
+}
+div.btext
+{
+  font-size: 0.7em;
+  display: grid;
+  grid-template-columns: 3.5em 3.5em 3.5em 3.5em;
+  grid-template-rows:  1.5em;
+  justify-content: space-around;
+  margin-top: 0px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+div.btext p
+{
+  margin:0px;
+}
+a img.img
+{
+  opacity: 1;
+  width: 100%;
+}
+.txt
+{
+  text-align: center;
+  opacity: 1;
+}
+.button a
+{
+  background-color: red;
+  border-radius: 5px;
+  margin: 8px;
+  margin-bottom: 0px;
+  /* padding: 1px; */
+  width: 3em;
+  height: 3em;
+}
+.button a:first-child {
+  background-color: black;
+  /* padding: 30px; */
+
+}
+.button a:nth-child(2) {
+  background-color: #7f4f27;
+
+}
+.button a:nth-child(3) {
+  background-color: white;
+
+}
+.button a:nth-child(4) {
+  background-color: #31518e;
+}
+.button a:nth-child(5) {
+  background-color: #83b0ab;
+
+}
+.button a:nth-child(6) {
+  background-color: #7f4f27;
+}
