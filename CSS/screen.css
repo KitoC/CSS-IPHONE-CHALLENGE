@@ -1,18 +1,18 @@
 
 
 
-body
+body.center
 {
   margin: 0px;
+  background-image: url("images/unnamed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: "Helvetica";
+  color: white;
+
+
 }
-/* #container
-{
-  margin: 0;
-  padding: 0;
-  background: #a2d49f;
-  width: 256px;
-  height:455px;
-} */
 
 .headGrid
 {
@@ -34,16 +34,16 @@ div.time
   grid-column: 2 / 3;
   height: 16px;
 
-  text-align: center;
-  font-family: "Helvetica";
 }
 div.battery
 {
+  font-size: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 16px;
   grid-column: 3 / 4;
   text-align: right;
+
 }
 img.battery
 {
@@ -236,5 +236,5 @@ body
   text-align: center;
   height: 200px;
   grid-column: 2/3;
-  
+
 }

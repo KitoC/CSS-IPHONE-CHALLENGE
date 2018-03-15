@@ -11,10 +11,10 @@
     <div class="center">
        <div class="mobile">
          <div class="screen">
-           <iframe src="blankscreen.html" style="border:none;" height="100%" width="100%" scrolling="no" name="iframe_a"></iframe>
+           <iframe src="blank.html" style="border:none;" height="100%" width="100%" scrolling="no" name="iframe_a"></iframe>
 
          </div>
-         <a href="screen.html" target="iframe_a"><div class="home"></div></a>
+         <a href="loading.html" target="iframe_a"><div class="home"></div></a>
          <div class="inner"></div>
          <ul class="volume">
            <li></li>
@@ -33,7 +33,7 @@
   if ($(document).width() <= 600) {
     setTimeout(function() {
       $('iframe').attr('src', 'screen.html');
-    }, 2000);
+    }, 15000);
   }
   </script>
 

@@ -5,7 +5,7 @@ body
 {
   margin: 0;
   padding: 0;
-  background: #a2d49f;
+  background: black;
 }
 a
 {
@@ -33,7 +33,7 @@ a
 .screen
 {
   position: relative;
-  background: #262626;
+  background: black;
   width: 256px;
   height:455px;
   margin: 58px auto;
@@ -46,7 +46,7 @@ a
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, .1);
   width: 100%;
   height: 100%;
   transform: skewX(-5deg) translateX(-50%);
