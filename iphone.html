@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>CSS</title>
     <link rel="stylesheet" type="text/css" href="CSS/iphone.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   </head>
   <body>
@@ -27,6 +28,14 @@
          </ul>
         </div>
   </div>
+
+  <script>
+  if ($(document).width() <= 600) {
+    setTimeout(function() {
+      $('iframe').attr('src', 'screen.html');
+    }, 2000);
+  }
+  </script>
 
   </body>
 </html>
