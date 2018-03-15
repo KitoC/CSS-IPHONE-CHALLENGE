@@ -1,24 +1,16 @@
 
 
-/* tan: eed5b6
-    light blue 83b0ab
-    brown 7f4f27
-    orange e59e42
-    red d64832
-    light tan f3dbb7
 
-    light blue green a2d49f
-    green c7c12f
-    orange f26247
-    red ec2045
-    tan ffeeb0
-
-    fb 31518e*/
 body
 {
   margin: 0;
   padding: 0;
-  background: #a2d49f;
+  background: black;
+}
+a
+{
+  font-size: 0px;
+  width: 100%;
 }
 .center
 {
@@ -41,7 +33,7 @@ body
 .screen
 {
   position: relative;
-  background: #262626;
+  background: black;
   width: 256px;
   height:455px;
   margin: 58px auto;
@@ -54,7 +46,7 @@ body
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, .1);
   width: 100%;
   height: 100%;
   transform: skewX(-5deg) translateX(-50%);
@@ -69,6 +61,11 @@ body
   opacity: 0;
 }
 .img
+{
+  opacity: 0;
+
+}
+.txt
 {
   opacity: 0;
 
@@ -96,8 +93,6 @@ div.btext
   margin-top: 0px;
   margin-right: 3px;
   margin-left: 3px;
-
-
 }
 div.btext p
 {
@@ -107,6 +102,11 @@ a img.img.active
 {
   opacity: 1;
   width: 100%;
+}
+.txt.active
+{
+  text-align: center;
+  opacity: 1;
 }
 .button.active a
 {
@@ -247,4 +247,49 @@ a img.img.active
   margin: 10px 0;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+@media screen and (max-width:600px) {
+  /* body
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+   } */
+  .center
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    }
+  .screen
+  {
+    /* position: absolute; */
+    background: #262626;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden;
+
+  }
+  .mobile
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+
+  }
+  .home
+  {
+    opacity: 0;
+  }
+  .inner
+  {
+    opacity: 0;
+  }
+
 }
